@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pop-up.css">
+    <link rel="stylesheet" href="aset/fontawesome-free-5.14.0-web/css/all.min.css">
+    <title>Pop Up</title>
+</head>
+<body>
+
+    <button onclick="pop()">Show Box</button>
+    <div id="box">
+        <span class="ion-check-round">
+            <img src="https://i.ytimg.com/vi/5On20jLYWi4/maxresdefault.jpg" alt="hostinger">
+            <a onclick="pop()" href="" class="close">Close</a>
+        </span>
+    </div>
+<script type="text/javascript">
+    var c = 0;
+    function pop() {
+        if(c == 0) {
+
+            document.getElementById("box").style.display = "block";
+            c = 1;  } 
+        else {
+
+            document.getElementById("box").style.display = "none";
+            c = 0;
+        }
+    }
+</script>
+</body>
+</html>
